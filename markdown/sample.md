@@ -23,11 +23,11 @@ Class Sample {
 
 ```mermaid
   flowchart TD
-      A[deploy phase] --> B{production?};
-      B -- Yes --> C[not deploy];
-      B -- No --> D[run deploy command.];
-      C ----> E[test phase];
-      D ----> E[test phase];
+      A["デプロイ"] --> B{"本番環境か？"};
+      B -- Yes --> C["不可"];
+      B -- No --> D["デプロイコマンドの実行"];
+      C ----> E["テスト"];
+      D ----> E["テスト"];
 ```
 
 ```mermaid
