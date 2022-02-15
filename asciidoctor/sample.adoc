@@ -1,0 +1,18 @@
+= AsciiDoctor Sample
+
+== Test
+
+[source,java]
+.sample.java
+----
+Class Sample {
+    private String test; //<1>
+
+    public getTest() {
+        return test; //<2>
+    }
+}
+----
+<1> フィールド宣言
+<2> ゲッターの実装
+
