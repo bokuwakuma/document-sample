@@ -30,6 +30,15 @@ Class Sample {
       D ----> E[テスト];
 ```
 
+```mermaid
+flowchart TD
+    A[Start] --> B{Is it?};
+    B -->|Yes| C[OK];
+    C --> D[Rethink];
+    D --> B;
+    B ---->|No| E[End];
+```
+
 ### Graph
 
 ```mermaid
@@ -43,10 +52,25 @@ Class Sample {
 ### Class Diagram
 
 ```mermaid
-  classDaigram
-      Sample <|-- Test
-      class Sample
-      Sample : +String test
-      Sample : +getTest(test)
-      class Test
+ classDiagram
+      Animal <|-- Duck
+      Animal <|-- Fish
+      Animal <|-- Zebra
+      Animal : +int age
+      Animal : +String gender
+      Animal: +isMammal()
+      Animal: +mate()
+      class Duck{
+          +String beakColor
+          +swim()
+          +quack()
+      }
+      class Fish{
+          -int sizeInFeet
+          -canEat()
+      }
+      class Zebra{
+          +bool is_wild
+          +run()
+      }
 ```
