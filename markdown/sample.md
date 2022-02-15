@@ -22,7 +22,7 @@ Class Sample {
 ### Flowchart
 
 ```mermaid
-  flowchart TEST;
+  flowchart TD
       A[デプロイ] --> B{本番環境か？};
       B -- Yes --> C[不可];
       B -- No --> D[デプロイコマンドの実行];
@@ -40,3 +40,13 @@ Class Sample {
       C-->D;
 ```
 
+### Class Diagram
+
+```mermaid
+  classDaigram
+      Sample <|-- Test
+      class Sample
+      Sample : +String test
+      Sample : +getTest(test)
+      class Test
+```
