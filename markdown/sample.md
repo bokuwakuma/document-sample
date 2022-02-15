@@ -30,3 +30,13 @@ flowchart TEST
     D ----> E[テスト];
 ```
 
+### Graph
+
+```mermaid
+  graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+```
+
